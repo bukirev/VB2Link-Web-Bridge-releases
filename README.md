@@ -1,2 +1,14 @@
-# VB2Link-Web-Bridge-releases
-Публичные выпуски VB2Link Web Bridge и установщик-обновлятор для Windows x64
+# VB2Link Web Bridge
+
+Мост для Windows x64 принимает камеру и экран из веб-комнаты VB2Link и передаёт их в нативный приёмник или плагин OBS. Мост запускается на принимающем компьютере. Передатчику достаточно браузера.
+
+[Скачать последнюю версию](https://github.com/bukirev/VB2Link-Web-Bridge-releases/releases/latest)
+
+- **Установка и обновления.** Запустите `VB2Link-Web-Bridge-Setup.exe`, нажмите «Проверить», затем «Установить». В меню «Пуск» появятся ярлыки моста и обновлятора.
+- **Переносная версия.** Распакуйте `VB2Link-Web-Bridge-Windows-x64.zip` и запустите `VB2Link-Web-Bridge.exe`.
+- **Подключение.** Скопируйте «Ссылка для OBS» в [веб-комнате](https://stream.vb2tr.ru/linc/) и вставьте в мост. В нативном приёмнике укажите `127.0.0.1`, UDP 5001 для камеры и 5002 для экрана.
+- Для работы нужен FFmpeg в `PATH` или `ffmpeg.exe` рядом с переносным мостом. При установке через Setup его можно положить в `%LOCALAPPDATA%\VB2Link\WebBridge`.
+
+[Передатчик и нативный плагин OBS](https://github.com/bukirev/webcam-low-latency/releases)
+
+В этом репозитории публикуются готовые пакеты моста.
